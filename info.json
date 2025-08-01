@@ -1,0 +1,9 @@
+{
+  "name": "fish-addicts-anonymous-timer",
+  "version": "1.0.0",
+  "title": "Fish Addicts Anonymous Timer",
+  "author": "Orbital917",
+  "factorio_version": "2.0",
+  "description": "F.A.A.T. where the F stands for factorio. Factorio is a game that eats lives. Aiming to help save marriages and jobs, we're introduce the addiction-timer. The timer defaults to automatically saving and then closing the game after 1hr (configurable) of play time.",
+  "dependencies": ["space-age"]
+}
