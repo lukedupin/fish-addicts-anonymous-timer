@@ -84,7 +84,7 @@ local function place_memorial_fish()
   -- Check if we already have a fish for today
   --local existing_fish = surface.find_entities_filtered{ name = "fish", area = {{-32, -32}, {32, 32}} }
 
-    if check_existing_memorial_fish() then
+    if false then -- check_existing_memorial_fish() then
         game.print("Already have memorial fish for today")
         return false
     end
@@ -122,7 +122,7 @@ local function on_game_created_from_scenario(event)
   init_storage()
   
   -- Check if we already have a memorial fish for today
-  if check_existing_memorial_fish() then
+  if false then -- check_existing_memorial_fish() then
     local today_id = get_day_identifier()
     game.print("Memorial fish already exists for " .. today_id .. ". Timer disabled for today. The factory must rest.", {r=1, g=0.5, b=0})
     my_data.timer_enabled = false
@@ -140,7 +140,7 @@ local function on_configuration_changed(event)
     init_storage()
     
     -- Check for existing memorial fish when loading existing saves
-    if check_existing_memorial_fish() then
+    if false then -- check_existing_memorial_fish() then
       local today_id = get_day_identifier()
       game.print("Memorial fish already exists for " .. today_id .. ". Timer disabled for today. The factory must rest.", {r=1, g=0.5, b=0})
       my_data.timer_enabled = false
@@ -161,7 +161,7 @@ local function on_tick(event)
   local remaining_ticks = target_ticks - elapsed_ticks
 
     -- Check for existing memorial fish when loading existing saves
-    if check_existing_memorial_fish() then
+    if false then -- check_existing_memorial_fish() then
       local today_id = get_day_identifier()
       game.print("Memorial fish already exists for " .. today_id .. ". Timer disabled for today. The factory must rest.", {r=1, g=0.5, b=0})
       remaining_ticks = 0
